@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+<div class="row">
+<div *ngFor="let routine of routines" class="card" style="width: 18rem;">
+    <img [src]="routine.imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{routine.name}} </h5>
+      <p class="card-text">{{routine.description}}</p>
+      <a href="#" class="btn btn-primary">Score: +{{routine.score}}</a>
+    </div>
+  </div>
+</div>
