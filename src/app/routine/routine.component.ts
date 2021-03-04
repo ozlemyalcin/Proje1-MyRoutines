@@ -11,6 +11,8 @@ export class RoutineComponent implements OnInit {
   constructor() { }
 
   title="My Routines"
+  filterText=""
+  toplam=0
 
   routines: Routine[]=[
     {id:1,name:"Out of Bed",categoryId:1, description:"asdfgh", score:1, imageUrl:"..."},
@@ -23,5 +25,8 @@ export class RoutineComponent implements OnInit {
 
   ngOnInit() {
   }
+  addToScore(routine){
+    alert("You earn +"+ routine.score +" point")
 
+  }
 }

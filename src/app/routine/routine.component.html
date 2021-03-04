@@ -1,11 +1,26 @@
 <h3>{{title}}</h3>
+
+
+<div class="form-group">
+  
+  <input  class="form-control" id="routineName" placeholder="Enter routine" 
+  [(ngModel)]="filterText"/>
+
+<small *ngIf="filterText" class="form-text text-muted">
+  Now  {{filterText}} is seraching...
+</small>
+</div>
+
+
+
+
 <div class="row">
-<div *ngFor="let routine of routines" class="card" style="width: 18rem;">
+<div *ngFor="let routine of routines | routineFilter:filterText" class="card" style="width: 18rem;">
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{routine.name}} </h5>
       <p class="card-text">{{routine.description}}</p>
-      <a href="#" class="btn btn-primary">Score: +{{routine.score}}</a>
+      <a href="#" (click)="addToScore(routine)" class="btn btn-primary">Score: +{{routine.score}}</a>
     </div>
   </div>
 </div>
