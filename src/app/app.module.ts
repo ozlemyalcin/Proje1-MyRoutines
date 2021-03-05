@@ -9,6 +9,7 @@ import { CategoryComponent } from './category/category.component';
 import { RoutineComponent } from './routine/routine.component';
 import { RoutineFilterPipe } from './routine/routine-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { AlertifyService } from './services/alertify.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AlertifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
