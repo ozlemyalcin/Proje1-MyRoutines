@@ -18,7 +18,7 @@
 <div *ngFor="let routine of routines | routineFilter:filterText" class="card" style="width: 18rem;">
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{routine.name}} </h5>
+      <h5 class="card-title" style="font-family:'Gaegu';color:#4e4e72;background-color:#FF7851; font-size: 200%;">{{routine.name}} </h5>
       <p class="card-text">{{routine.description}}</p>
       <a href="#" (click)="addToAlert(routine)" class="btn btn-primary">Score: +{{routine.score}}</a>
     </div>
