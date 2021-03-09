@@ -9,8 +9,16 @@ export class RoutineService {
   constructor(private http:HttpClient) { }
   path="http://localhost:3000/routines"
 
-  getRoutines():Observable<Routine[]> {
-    return this.http.get<Routine[]>(this.path);
+  getRoutines(categoryId):Observable<Routine[]> {
+    //alert(categoryId);
+    let newPath=this.path;
+    if(categoryId){
+      newPath+= "?categoryId="+categoryId;
+    }
+
+
+
+    return this.http.get<Routine[]>(newPath);
      
     
   }

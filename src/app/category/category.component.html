@@ -1,8 +1,8 @@
 
 <h2>{{title}}</h2>
 <div>
-    <a class="list-group-item  " style="color:#4c4c72;background-color:#fd8868; font-family:'Gaegu'; font-size:200%">All My Routines</a>
+    <a class="list-group-item"  style="color:#4c4c72;background-color:#fd8868; font-family:'Gaegu'; font-size:200%">All My Routines</a>
 </div>
 <div class="list-group" *ngFor="let category of categories">
-    <a class="list-group-item" style="color:#4c4c72; font-family:'Gaegu'; font-size:200%">{{category.name}}</a>
+    <a class="list-group-item" routerLink="routines/category/{{category.id}}"  style="color:#4c4c72; font-family:'Gaegu'; font-size:200%">{{category.name}}</a>
 </div>

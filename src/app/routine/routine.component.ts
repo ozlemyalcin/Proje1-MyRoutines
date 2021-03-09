@@ -3,6 +3,7 @@ import { Routine } from './routine';
 import {AlertifyService} from '../services/alertify.service'
 import * as alertify from 'alertifyjs';
 import { RoutineService } from '../services/routine.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 
@@ -16,7 +17,8 @@ import { RoutineService } from '../services/routine.service';
 export class RoutineComponent implements OnInit {
 
   constructor(private alertifyService:AlertifyService,
-    private routineService:RoutineService
+    private routineService:RoutineService,
+    private activatedRoute:ActivatedRoute
     ) { }
   
 
@@ -29,9 +31,14 @@ export class RoutineComponent implements OnInit {
 
 
   ngOnInit() {
-    this.routineService.getRoutines().subscribe(data=>{
-      this.routines=data
+    this.activatedRoute.params.subscribe(params=>{
+      this.routineService.getRoutines(params["categoryId"]).subscribe(data=>{
+        this.routines=data
+
     });
+  })
+   
+    
 
 
    
