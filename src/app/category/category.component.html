@@ -1,8 +1,10 @@
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex">
 
-<h2>{{title}}</h2>
-<div>
-    <a class="list-group-item"  style="color:#4c4c72;background-color:#fd8868; font-family:'Gaegu'; font-size:200%">All My Routines</a>
-</div>
-<div class="list-group" *ngFor="let category of categories">
-    <a class="list-group-item" routerLink="routines/category/{{category.id}}"  style="color:#4c4c72; font-family:'Gaegu'; font-size:200%">{{category.name}}</a>
+        <a routerLink="" class="p-2 text-muted" >All My Routines</a>
+
+        <a *ngFor="let category of categories" routerLink="/routines/category/{{category.id}}"
+            class="p-2 text-muted" href="#">{{category.name}}</a>
+
+    </nav>
 </div>

@@ -1,5 +1,5 @@
-<h3>{{title}}</h3>
-
+ <!-- <h3>{{title}}</h3> -->
+<app-category></app-category>
 
 <div class="form-group">
   
@@ -15,7 +15,7 @@
 
 
 <div class="row">
-<div *ngFor="let routine of routines | routineFilter:filterText" class="card" style="width: 18rem;">
+<div *ngFor="let routine of routines | routineFilter:filterText" class="routinebox" style="width: 18rem;">
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="font-family:'Gaegu';color:#4e4e72;background-color:#FF7851; font-size: 200%;">{{routine.name}} </h5>
