@@ -10,6 +10,7 @@ import { RoutineComponent } from './routine/routine.component';
 import { RoutineFilterPipe } from './routine/routine-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { AlertifyService } from './services/alertify.service';
+import { RoutineAddComponent } from './routine/routine-add/routine-add.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AlertifyService } from './services/alertify.service';
     NavComponent,
     CategoryComponent,
     RoutineComponent,
-    RoutineFilterPipe
+    RoutineFilterPipe,
+    RoutineAddComponent
   ],
   imports: [
     BrowserModule,

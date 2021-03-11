@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Routine } from '../routine/routine';
 import { Observable } from 'rxjs';
 
@@ -21,5 +21,18 @@ export class RoutineService {
     return this.http.get<Routine[]>(newPath);
      
     
+  }
+
+  addRoutine(routine:Routine):Observable<Routine>{
+
+    const httpOptions={
+      headers:new HttpHeaders({
+        'Content-Type':'application/json',
+        'Authorization': 'Token'
+      })
+    }
+    return this.http.post<Routine>(this.path,routine, httpOptions)
+
+
   }
 }

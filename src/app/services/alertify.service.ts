@@ -10,6 +10,9 @@ export class AlertifyService {
 
 
 //my function
+success(message:string){
+  alertify.success(message)
+}
 
 confirmAlert(confirmMessage:string, successMessage:string, errorMessage:string)
 {
