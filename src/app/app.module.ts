@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { AlertifyService } from './services/alertify.service';
 import { RoutineAddComponent } from './routine/routine-add/routine-add.component';
 
+import { RoutinesComponent } from './routines/routines.component';
+import { RoutinelistComponent } from './routines/routinelist/routinelist.component';
+import { RoutineeditComponent } from './routines/routineedit/routineedit.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +23,11 @@ import { RoutineAddComponent } from './routine/routine-add/routine-add.component
     CategoryComponent,
     RoutineComponent,
     RoutineFilterPipe,
-    RoutineAddComponent
+    RoutineAddComponent,
+  
+    RoutinesComponent,
+    RoutinelistComponent,
+    RoutineeditComponent
   ],
   imports: [
     BrowserModule,

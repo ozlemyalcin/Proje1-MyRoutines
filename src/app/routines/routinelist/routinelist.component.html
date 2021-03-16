@@ -1,0 +1,52 @@
+
+<table class="table table-hover table-striped">
+    <tbody>
+    
+      <tr>
+        <th>
+  
+        </th>
+        <th>
+          Image
+        </th>
+        <th>
+          Routine Name
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Score
+        </th>
+        <th>
+            Actions
+          
+          </th>
+  
+      </tr>
+    
+</tbody>
+    <tbody>
+      <tr *ngFor="let r of routines">
+        <th>{{r.id}}</th>
+        <th>
+          <img src="{{r.imageUrl}}" width="50">
+        </th>
+        <th>{{r.name}}</th>
+        <th>{{r.description}}</th>
+  
+        <th>{{r.score}}</th>
+  
+         <th >
+           
+          <button  class="fa fa-trash-o"  type="button" style="font-size:30px; color:red; cursor:pointer;"></button>
+        
+          <a  routerLink="../edit/{{r.id}}"type="button" class="fa fa-edit" style="font-size:30px; color:rgb(85, 156, 85); cursor:pointer;"></a>
+        
+         </th>
+      </tr>
+  
+    </tbody>
+  
+  </table>
+  
