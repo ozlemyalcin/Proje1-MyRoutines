@@ -29,6 +29,15 @@ export class RoutinelistComponent implements OnInit {
         this.count=this.routines.length;
       });
   }
+deleteOne(id:number){
+  this.routinesService.deleteRoutine(id)
+  .subscribe(
+    data=>{
+      this.submitted=true;
+      this.loadData();
+      console.log("Data: ", data);
 
+    });
+}
 
 }

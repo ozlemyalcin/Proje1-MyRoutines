@@ -24,7 +24,8 @@ const routes: Routes = [
   {path:'routines', component:RoutinesComponent,
 children:[
   {path:'show', component:RoutinelistComponent},
-  {path:'edit/:id', component:RoutineeditComponent}
+  {path:'edit/:id', component:RoutineeditComponent},
+  {path:'delete/:id', component:RoutinelistComponent}
  
 ]}
   
