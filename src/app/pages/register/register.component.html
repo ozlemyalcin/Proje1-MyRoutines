@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Register
+    </title>
+    <link rel="styleshhet" href="style.css">
+</head>
+<body>
+    <form action="" (ngSubmit)="register()" >
+        <h2> Register</h2>
+        <input type="text" name="email" [(ngModel)]="email" placeholder="Enter Email" required>
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Enter Password" required>
+        <input type="submit" value="Register">
+       <div class="register"><a href="#" routerLink=""> Back To Login</a></div> 
+    </form>
+    <div class="form-group">
+        <p *ngIf="errorMessage.length > 0" class="text-danger">
+            {{errorMessage}}</p>
+        
+        <p *ngIf="error.message.length > 0" class="text-danger">
+            {{error.message}} </p>
+
+            <p *ngIf="message.length > 0" class="text-info">
+                {{message}} </p>
+    </div>
+    
+
+</body>
+
+</html>

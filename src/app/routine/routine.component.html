@@ -1,7 +1,8 @@
  <!-- <h3>{{title}}</h3> -->
+ 
 <app-category></app-category>
-
 <div class="form-group">
+  
   
   <input  class="form-control" id="routineName" placeholder="Enter routine" 
   [(ngModel)]="filterText"/>
@@ -13,7 +14,7 @@
 
 
 
-
+<div class="col-md-12">
 <div class="row">
 <div *ngFor="let routine of routines | routineFilter:filterText" class="routinebox">
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
@@ -23,4 +24,5 @@
       <a href="#" (click)="addToAlert(routine)" class="btn btn-primary">Score: +{{routine.score}}</a>
     </div>
   </div>
+</div>
 </div>

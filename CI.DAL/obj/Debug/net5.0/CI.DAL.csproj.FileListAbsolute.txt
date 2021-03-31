@@ -1,0 +1,13 @@
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.csprojAssemblyReference.cache
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.AssemblyInfoInputs.cache
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.AssemblyInfo.cs
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.csproj.CoreCompileInputs.cache
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/bin/Debug/net5.0/CI.DAL.deps.json
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/bin/Debug/net5.0/CI.DAL.dll
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/bin/Debug/net5.0/ref/CI.DAL.dll
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/bin/Debug/net5.0/CI.DAL.pdb
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.dll
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/ref/CI.DAL.dll
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.pdb
+/Users/admin/codeCamp2020/FinalProject/Proje1/routines/CI.DAL/obj/Debug/net5.0/CI.DAL.MvcApplicationPartsAssemblyInfo.cache

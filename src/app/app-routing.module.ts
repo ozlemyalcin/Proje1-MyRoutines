@@ -5,6 +5,8 @@ import { RoutineComponent } from './routine/routine.component';
 import { RoutinesComponent } from './routines/routines.component';
 import { RoutinelistComponent } from './routines/routinelist/routinelist.component';
 import { RoutineeditComponent } from './routines/routineedit/routineedit.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -14,7 +16,9 @@ import { RoutineeditComponent } from './routines/routineedit/routineedit.compone
 const routes: Routes = [
   
 
-  {path:'', component: RoutineComponent},
+  {path:'routineshome', component: RoutineComponent},
+  {path:'', component: LoginComponent},
+  {path:'register', component: RegisterComponent},
   
   
   

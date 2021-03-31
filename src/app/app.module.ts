@@ -16,6 +16,17 @@ import { RoutinesComponent } from './routines/routines.component';
 import { RoutinelistComponent } from './routines/routinelist/routinelist.component';
 import { RoutineeditComponent } from './routines/routineedit/routineedit.component';
 
+
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { AuthService } from './services/auth.service';
+import { AngularFireAuth } from '@angular/fire/auth';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,15 +38,25 @@ import { RoutineeditComponent } from './routines/routineedit/routineedit.compone
   
     RoutinesComponent,
     RoutinelistComponent,
-    RoutineeditComponent
+    RoutineeditComponent,
+    LoginComponent,
+    RegisterComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
+   
   ],
-  providers: [AlertifyService],
+  providers: [AlertifyService,
+    AuthService,
+    AngularFireAuth],
+    
   bootstrap: [AppComponent]
 })
 export class AppModule { }
