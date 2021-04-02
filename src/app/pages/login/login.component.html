@@ -10,11 +10,11 @@
 </head>
 <body>
     <form  action="" (ngSubmit)="login()">
-        <h2> Sign In</h2>
+        <h2 style="color:BEIGE"> Sign In</h2>
         <input type="text" name="email" [(ngModel)]="email" placeholder="Enter Email" required>
         <input type="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
         <input type="submit" value="Login">
-       <div class="register"><a href="#" routerLink="/register"> New user Register</a></div> 
+       <div class="register"><a href="#" style="color:beige" routerLink="/register"> New user Register</a></div> 
     </form>
     <div class="form-group">
         <p *ngIf="errorMessage.length > 0" class="text-danger">

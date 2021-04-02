@@ -8,3 +8,8 @@ img{
     object-fit:cover;
 
 }
+
+.card-body{
+    background-color:rgb(232, 215, 248);
+}
+

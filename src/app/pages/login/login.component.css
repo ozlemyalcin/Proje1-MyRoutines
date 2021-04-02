@@ -9,7 +9,7 @@ body{
     min-height:100vh;
 }
 form{
-    background: #8b91ec;
+    background: #fc9f7a;
     padding:20px;
     display: inline-flex;
     flex-direction:column;
@@ -23,7 +23,7 @@ form{
 }
 form h2{
     font-size:55px;
-    color:white;
+    color:#ffffff;
     margin-bottom: 30px;
     margin-top: 20px;
     ;
@@ -48,11 +48,11 @@ form input{
 }
 
 form input[type="text"], form input[type="password"]{
-    border: solid 2px #e74c3c;
+    border: solid 2px rgb(206, 134, 116);
 }
 
 form input[type="submit"]{
-    border: solid 2px #2ecc71;
+    border: solid 2px BEIGE;
     box-sizing: border-box;
     height:50px;
     width: 40%;
@@ -61,12 +61,12 @@ form input[type="submit"]{
 
 form input[type="text"]:focus, form input[type="password"]:focus{
 width:80%;
-border:solid 2px #2ecc71;
+border:solid 2px beige;
     
 }
 
 form input[type="submit"]:hover{
-    background:#e74c3c ;
+    background:rgb(160, 161, 231);
     color:#2980b9;
   
 }

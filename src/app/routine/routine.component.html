@@ -1,28 +1,34 @@
  <!-- <h3>{{title}}</h3> -->
  
-<app-category></app-category>
+ 
 <div class="form-group">
   
   
-  <input  class="form-control" id="routineName" placeholder="Enter routine" 
+  <input  class="form-control" id="routineName" placeholder="Enter routine" style="font-size: x-large; color: blueviolet; background-color: #fab296;"
   [(ngModel)]="filterText"/>
 
-<small *ngIf="filterText" class="form-text text-muted">
+<small *ngIf="filterText" class="form-text text-muted" style="font-size: x-large; ">
   Now  {{filterText}} is seraching...
 </small>
 </div>
 
 
-
-<div class="col-md-12">
 <div class="row">
+<div class="col-md-2">
+<app-category ></app-category>
+</div>
+
+<div class="col-md-10">
+  
+<div class="row" >
 <div *ngFor="let routine of routines | routineFilter:filterText" class="routinebox">
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title" style="font-family:'Gaegu';color:#4e4e72;background-color:#FF7851; font-size: 200%;">{{routine.name}} </h5>
+      <h5 class="card-title" style="font-family:'Gaegu';color:beige; background-color:rgb(131, 132, 240); font-size: 200%;">{{routine.name}} </h5>
       <p class="card-text">{{routine.description}}</p>
-      <a href="#" (click)="addToAlert(routine)" class="btn btn-primary">Score: +{{routine.score}}</a>
+      <a (click)="addToAlert(routine)" class="btn " style="background-color: #f17d4f; color:beige">Score: +{{routine.score}}</a>
     </div>
   </div>
+</div>
 </div>
 </div>

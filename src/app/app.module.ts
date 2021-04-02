@@ -25,6 +25,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AuthService } from './services/auth.service';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -50,7 +52,8 @@ import { AngularFireAuth } from '@angular/fire/auth';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FontAwesomeModule
    
   ],
   providers: [AlertifyService,

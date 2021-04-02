@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:'routines/category/:categoryId', component:RoutineComponent},
   {path:'routine-add', component: RoutineAddComponent},
 
-  {path:'routines', component:RoutinesComponent,
+  {path:'routine', component:RoutinesComponent,
 children:[
   {path:'show', component:RoutinelistComponent},
   {path:'edit/:id', component:RoutineeditComponent},
