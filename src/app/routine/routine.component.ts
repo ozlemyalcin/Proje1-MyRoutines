@@ -42,11 +42,15 @@ export class RoutineComponent implements OnInit {
 
 
   }
+ 
 
   addToAlert(routine) {
-    this.alertifyService.confirmAlert("Did you complete this habit?", "Heeyy! you earn +" + routine.score + " point", "Oh!No! Let's try again!!")
 
+    
+    
+    this.alertifyService.confirmAlert("Did you complete this habit?", "Heeyy! you earn "  +routine.score + " point", "Oh!Noo! Let's try again!!")
 
+    
 
 
   }
