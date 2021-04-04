@@ -25,8 +25,9 @@
     <img [src]="routine.imageUrl" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="font-family:'Gaegu';color:beige; background-color:rgb(131, 132, 240); font-size: 200%;">{{routine.name}} </h5>
-      <p class="card-text">{{routine.description}}</p>
-      <a (click)="addToAlert(routine)" class="btn" style="background-color: #f17d4f; color:beige;">Score: +{{routine.score}}</a>
+      <p class="card-text"  style="font-size: large;">{{routine.description}} </p>
+      <p class="card-text" style="font-size: large; color: rgb(54, 31, 23);">Prize: {{routine.score}}</p>
+      <a (click)="addToAlert(routine)" class="btn" style="background-color: #f17d4f; color:beige;"   >Click Me If You're Done!!</a>
     </div>
   </div>
 </div>

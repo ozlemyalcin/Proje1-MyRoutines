@@ -5,7 +5,7 @@
             <p class="text-left font-weight-bold">Active Routine</p>
             <ng-container *ngIf="submitted">
                 <p class="text-center alert alert-success p-2 rounded">
-                    Successfully new routine: " {{routine.name}} " Added!!!
+                    Successfully edit "{{routine.name}}" routine
                 </p>
             </ng-container>
             <ng-container *ngIf="!submitted">
@@ -24,10 +24,10 @@
 
                         <div class="col-md-4 mb-3">
                             <label>Description:</label>
-                            <input name="description" class="form-control" type="text" [(ngModel)]="routine.description"/>
+                            <input name="description" class="form-control" type="text" [(ngModel)]="routine.description"/>	
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label>Score:</label>
+                            <label>Prize:(optional)</label>
                             <input name="score" class="form-control" type="text" [(ngModel)]="routine.score"/>
                         </div>
 

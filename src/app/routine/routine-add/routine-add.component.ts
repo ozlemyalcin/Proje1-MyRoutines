@@ -33,7 +33,7 @@ export class RoutineAddComponent implements OnInit {
   add(form:NgForm)
   {
     this.routineService.addRoutine(this.model).subscribe(data=>{
-      this.alertifyService.success(data.name+ "basariyla eklendi")
+      this.alertifyService.success("Routine: "+data.name+ " successfully added")
     });
 
   }

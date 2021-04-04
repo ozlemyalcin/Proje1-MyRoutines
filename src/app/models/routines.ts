@@ -4,7 +4,7 @@ export class Routine{
     name:string;
     description:string;
     categoryId:number;
-    score:number;
+    score:string;
     imageUrl:string;
 
 

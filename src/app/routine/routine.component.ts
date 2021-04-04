@@ -48,7 +48,7 @@ export class RoutineComponent implements OnInit {
 
     
     
-    this.alertifyService.confirmAlert("Did you complete this habit?", "Heeyy! you earn "  +routine.score + " point", "Oh!Noo! Let's try again!!")
+    this.alertifyService.confirmAlert("Did you complete this habit?", "Heeyy!!! Way to Go!!!", "Oh!Noo! Let's try again!!")
 
     
 
