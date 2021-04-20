@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
     if (this.validateForm(this.email, this.password)) {
       this.authservice.registerWithEmail(this.email, this.password)
         .then(() => {
-          this.message = "you are register with data on firbase"
+          this.message = "You are register "
           //this.router.navigate(['/userinfo'])
         }).catch(_error => {
           this.error = _error
@@ -43,18 +43,18 @@ export class RegisterComponent implements OnInit {
   {
     if(email.lenght === 0)
     {
-      this.errorMessage = "please enter email id";
+      this.errorMessage = "Please enter email id";
       return false;
     }
 
     if (password.lenght === 0) {
-      this.errorMessage = "please enter password";
+      this.errorMessage = "Please enter password";
       return false;
     }
 
     if (password.lenght < 6)
     {
-      this.errorMessage = "password should be at least 6 char";
+      this.errorMessage = "Password should be at least 6 char";
       return false;
     }
 
